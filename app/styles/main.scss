@@ -1,0 +1,182 @@
+// bower:scss
+// endbower
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* Space out content a bit */
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+
+  /* Make the masthead heading the same height as the navigation */
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40px;
+    padding-bottom: 19px;
+  }
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+.container-narrow > hr {
+  margin: 30px 0;
+}
+.yum {
+  height: 10%;
+  width: 10%;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+
+  .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+  }
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+
+  p + h4 {
+    margin-top: 28px;
+  }
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+ 
+
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
+  .icon-preview {
+      display: inline-block;
+      border-radius: 3px;
+      cursor: pointer;
+      float: right;
+
+  }
+  .icon-preview:active i { color: red; }
+  .icon-preview:hover span { display: block; cursor: text; }
+.shifted {
+  margin-left: 30px;
+  }
+  .thumbnail {
+  margin-bottom: 10px;
+  }
+  img .detailimg {
+  margin-left: auto;
+  margin-right: auto;
+  }
+  div .container .recipe-container {
+  margin-left: auto;
+  margin-right: auto;
+  }
+i .red {
+  color: red;
+}
+i .grey {
+  color: grey;
+}
+.caption h4 {
+  font-size: 25px;
+}
+body {
+  color: #616161;
+}
+.card-footer-open {
+  max-hieght: 100px;
+  min-height: 100px;
+}
+.openRecipeTitle {
+  font-size: 20px;
+}
+a {
+  color: #616161;
+  text-decoration: none;
+}
+.panel {
+
+  min-height: 180px;
+  max-height: 180px;
+  overflow: hidden;
+}
+.panel-heading {
+background-color: #d1c4e9;
+  max-height: 120px;
+  min-height: 120px;
+  overflow: hidden;
+}
+.panel > .panel-heading, .panel-default > .panel-heading {
+  background-color: #ede7f6
+}
+a:link {
+    text-decoration: none;
+    color: #616161;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #616161;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #616161;
+}
+
+a:active {
+    text-decoration: none;
+    color: #616161;
+}
+
+body > div.ng-scope > div.navbar.navbar-default.navbar-fixed-top.ng-scope {
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.23), 0 1px 10px rgba(0, 0, 0, 0.16);
+  -webkit-transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+          transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+}
+body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4 {
+font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-weight: 300;
+}

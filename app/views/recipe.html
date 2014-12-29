@@ -1,0 +1,136 @@
+<div class="navbar navbar-default navbar-fixed-top">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse"> <span class="icon-bar"></span>
+ <span class="icon-bar"></span>
+ <span class="icon-bar"></span>
+
+        </button> <a class="navbar-brand" href="/"><img width="50%" src="images/canary.svg"></img></a>
+
+    </div>
+    <div class="navbar-collapse collapse navbar-responsive-collapse navbar-right">
+        <ul class="nav navbar-nav">
+            <li><a href="/"><i class="mdi-action-home"></i></a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div container="centered">
+    <div class="container"> <a href={{recipe.url}}><img class="img-responsive" src={{recipe.largeImage}}></img></a>
+
+    </div>
+    <div class="container">
+         <h4 class="recipeName">{{recipe.name}}</h4>
+
+        <div class="col s16">
+             <h6 class="short" data-field="description">{{recipe.description}}</h6>
+
+            <br>
+            <br>
+            <td>
+                <form action="">
+                    <input type="checkbox" id="glutenHere" ng-model="warning" />
+                    <label data-toggle=snackbar data-content={{dataContent}} for="glutenHere">Identify Gluten</label>
+                    <br>
+                    <input data-toggle=snackbar data-content="It's all good!" ng-click="toggleCustom()" type="checkbox" id="noGluten" ng-model="yay" />
+                    <label for="noGluten">Swap!</label>
+                </form>
+            </td>
+            <div class="row">
+                <div class="col-md-6">
+                    <table class="bordered">
+                        <tr>
+                            <td>
+                                <data-field="ingredients" class="ingredients"><strong>INGREDIENTS<strong>
+                            </td>
+                        </tr>
+                        <br>
+                        <tbdody >
+                            <tr ng-show={{ingredient.show}} data-field="ingredient" ng-repeat="ingredient in ingredients" ng-class={{ingredient.glutenClass}}>
+                                <td>
+                                    <data-field="quantity">{{ingredient.quantity}}
+                                    <data-field="unit">{{ingredient.unit}}
+                                    <data-field="name">{{ingredient.name}}
+                                </td>
+                            </tr>
+                            <tr ng-hide={{ingredient.substitute.hide}} ng-if="ingredient.substitute.name" data-field="ingredient" ng-repeat="ingredient in ingredients" ng-class={{ingredient.substitute.glutenClass}}>
+                                <td>
+                                    <data-field="quantity">{{ingredient.quantity}}
+                                    <data-field="unit">{{ingredient.unit}}
+                                    <data-field="substitute">{{ingredient.substitute.name}} 
+                                </td>
+                            </tr>
+                            <tr ng-hide={{flour.hide}} data-field="ingredient" ng-if="flour.fat" ng-repeat="flour in flours" ng-class={{flour.glutenClass}}>
+                                <td >
+                                    <data-field="fat">{{flour.fat.weight | number: 0}} grams {{flour.fat.kind}}
+                                </td>
+                            </tr>
+                            <tr ng-hide={{flour.hide}} data-field="ingredient" ng-if="flour.lightness" ng-repeat="flour in flours" ng-class={{flour.glutenClass}}>
+                                <td >
+                                    <data-field="lightness">{{flour.lightness.weight | number: 0}} grams {{flour.lightness.kind}}
+                                </td>
+                            </tr>
+                            <tr ng-hide={{flour.hide}} data-field="ingredient" ng-if="flour.density" ng-repeat="flour in flours" ng-class={{flour.glutenClass}}>
+                                <td>
+                                    <data-field="density">{{flour.density.weight | number: 0}} grams {{flour.density.kind}}
+                                </td>
+                            </tr>
+                            <tr ng-hide={{flour.hide}} data-field="ingredient" ng-if="flour.texture" ng-repeat="flour in flours" ng-class={{flour.glutenClass}}>
+                                <td>
+                                    <data-field="texture">{{flour.texture.weight | number: 0}} grams {{flour.texture.kind}}
+                                </td>
+                            </tr>
+                            <tr ng-hide={{flour.hide}} data-field="ingredient" ng-if="flour.protein" ng-repeat="flour in flours" ng-class={{flour.glutenClass}}>
+                                {{flour.protein.kind}}
+                                <td >
+                                    <data-field="protein">{{flour.protein.weight | number: 0}} grams {{flour.protein.kind}}
+                                </td>
+                            </tr>
+                            <tr ng-hide={{flour.hide}} data-field="ingredient" ng-if="flour.stickiness" ng-repeat="flour in flours" ng-class={{flour.glutenClass}}>
+                                <td >
+                                    <data-field="stickiness">{{flour.stickiness.weight | number: 0}} grams {{flour.stickiness.kind}}
+                                </td>
+                            </tr>
+                            <tr ng-hide={{flour.hide}} data-field="ingredient" ng-if="flour.starch" ng-repeat="flour in flours" ng-class={{flour.glutenClass}}>
+                                <td>
+                                    <data-field="starch">{{flour.starch.weight | number: 0}} grams {{flour.starch.kind}}
+                                </td>
+                            </tr>
+                            <tr ng-hide={{flour.hide}} data-field="ingredient" ng-if="flour.binder" ng-repeat="flour in flours" ng-class={{flour.glutenClass}}>
+                                <td>
+                                    <data-field="binder">{{flour.binder.amount | number: 0}} {{flour.binder.unit}} {{flour.binder.kind}}
+                                </td>
+                            </tr>
+                            <tr ng-hide={{flour.hide}} data-field="ingredient" ng-if="flour.leavener" ng-repeat="flour in flours" ng-class={{flour.glutenClass}}>
+                                <td>
+                                    <data-field="leavener">{{flour.leavener.amount | number: 0}} {{flour.leavener.unit}} {{flour.leavener.kind}}
+                                </td>
+                            </tr>
+                      </div>     
+                </div>
+            </div>
+            <tr>
+            <td>
+            <data-field="servings"><strong>Servings: </strong>{{recipe.servings}}</td>
+                        </tr>
+                        </tbdody>
+                    </table>
+                    <br>
+                </div>
+                <div class="col-md-8">
+                    <div class="card-panel">
+                        <div class="container">
+                            <div class="instructions-group"> <strong>INSTRUCTIONS</strong>
+
+                                <p class="flex text" id="instructions" ng-repeat="instruction in instructions">{{instruction}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+<br>
+<br>

@@ -1,0 +1,16 @@
+[2014-12-15 21:10:28,077][INFO ][node                     ] [Outlaw] version[1.4.1], pid[51181], build[89d3241/2014-11-26T15:49:29Z]
+[2014-12-15 21:10:28,078][INFO ][node                     ] [Outlaw] initializing ...
+[2014-12-15 21:10:28,081][INFO ][plugins                  ] [Outlaw] loaded [], sites []
+[2014-12-15 21:10:31,117][INFO ][node                     ] [Outlaw] initialized
+[2014-12-15 21:10:31,118][INFO ][node                     ] [Outlaw] starting ...
+[2014-12-15 21:10:31,205][INFO ][transport                ] [Outlaw] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/10.0.1.5:9300]}
+[2014-12-15 21:10:31,232][INFO ][discovery                ] [Outlaw] elasticsearch/Q_CoE_wCQqGmVKseO9k6yg
+[2014-12-15 21:10:35,027][INFO ][cluster.service          ] [Outlaw] new_master [Outlaw][Q_CoE_wCQqGmVKseO9k6yg][Mars-MacBook-Pro-3.local][inet[/10.0.1.5:9300]], reason: zen-disco-join (elected_as_master)
+[2014-12-15 21:10:35,213][INFO ][http                     ] [Outlaw] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/10.0.1.5:9200]}
+[2014-12-15 21:10:35,213][INFO ][node                     ] [Outlaw] started
+[2014-12-15 21:10:37,773][DEBUG][action.search.type       ] [Outlaw] All shards failed for phase: [query]
+[2014-12-15 21:10:39,380][DEBUG][action.search.type       ] [Outlaw] All shards failed for phase: [query]
+[2014-12-15 21:10:40,630][DEBUG][action.search.type       ] [Outlaw] All shards failed for phase: [query]
+[2014-12-15 21:10:40,929][DEBUG][action.search.type       ] [Outlaw] All shards failed for phase: [query]
+[2014-12-15 21:10:41,625][INFO ][gateway                  ] [Outlaw] recovered [3] indices into cluster_state
+[2014-12-15 21:10:42,997][DEBUG][action.search.type       ] [Outlaw] All shards failed for phase: [query]

@@ -1,0 +1,15 @@
+[2014-12-22 10:46:00,900][INFO ][node                     ] [Outlaw] stopping ...
+[2014-12-22 10:46:02,477][INFO ][node                     ] [Outlaw] stopped
+[2014-12-22 10:46:02,477][INFO ][node                     ] [Outlaw] closing ...
+[2014-12-22 10:46:02,502][INFO ][node                     ] [Outlaw] closed
+[2014-12-22 10:46:05,516][INFO ][node                     ] [Battleaxe] version[1.4.1], pid[1038], build[89d3241/2014-11-26T15:49:29Z]
+[2014-12-22 10:46:05,517][INFO ][node                     ] [Battleaxe] initializing ...
+[2014-12-22 10:46:05,520][INFO ][plugins                  ] [Battleaxe] loaded [], sites []
+[2014-12-22 10:46:08,474][INFO ][node                     ] [Battleaxe] initialized
+[2014-12-22 10:46:08,474][INFO ][node                     ] [Battleaxe] starting ...
+[2014-12-22 10:46:08,576][INFO ][transport                ] [Battleaxe] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.14:9300]}
+[2014-12-22 10:46:08,602][INFO ][discovery                ] [Battleaxe] elasticsearch/UNRqg7FwRluLTzTN28C7oA
+[2014-12-22 10:46:12,377][INFO ][cluster.service          ] [Battleaxe] new_master [Battleaxe][UNRqg7FwRluLTzTN28C7oA][Mars-MacBook-Pro-3.local][inet[/192.168.1.14:9300]], reason: zen-disco-join (elected_as_master)
+[2014-12-22 10:46:12,579][INFO ][http                     ] [Battleaxe] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.14:9200]}
+[2014-12-22 10:46:12,580][INFO ][node                     ] [Battleaxe] started
+[2014-12-22 10:46:15,225][INFO ][gateway                  ] [Battleaxe] recovered [3] indices into cluster_state

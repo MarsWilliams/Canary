@@ -1,0 +1,68 @@
+<div class="navbar navbar-default navbar-fixed-top">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse"> <span class="icon-bar"></span>
+ <span class="icon-bar"></span>
+ <span class="icon-bar"></span>
+
+        </button> <a class="navbar-brand" href="/"><img width="50%" hieght="50%" src="images/canary.svg"></img></a>
+
+    </div>
+    <div class="navbar-collapse collapse navbar-responsive-collapse navbar-right">
+        <ul class="nav navbar-nav">
+            <li><a href="/"><i class="mdi-action-home"></i></a>
+            </li>
+        </ul>
+        <form class="navbar-form navbar-right">
+            <input type="text" class="form-control col-lg-8" ng-model="searchTerm" placeholder="search">
+        </form>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4">
+            <div ng-repeat="recipe in yummlyRecipes">
+                <div class="well" ng-if="($index)%3==0"> <a href="{{recipe.url}}" class="thumbnail">
+              <img src={{recipe.thumbImage}} class="img-responsive" /></a>
+                    <div class="caption">
+                        <div class="icon-preview"><i class="fa fa-heart fa-6" style="font-size: 15px"></i>
+                        </div>
+                         <h4>{{recipe.name}}</h4>
+
+                    </div>
+                    <div class="clearfix visible-xs-block"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div ng-repeat="recipe in yummlyRecipes">
+                <div class="well" ng-if="($index-1)%3==0"> <a href="{{recipe.url}}" class="thumbnail">
+              <img src={{recipe.thumbImage}} class="img-responsive"/></a>
+                    <div class="caption">
+                        <div class="icon-preview"><i class="fa fa-heart fa-4" style="font-size: 15px"></i>
+                        </div>
+                         <h4>{{recipe.name}}</h4>
+                    </div>
+                    <div class="clearfix visible-xs-block"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div ng-repeat="recipe in Yummlyrecipes">
+                <div class="well" ng-if="($index-2)%3==0"> <a href="{{recipe.url}}" class="thumbnail">
+              <img src={{recipe.thumbImage}} class="img-responsive"/></a>
+                    <div class="caption">
+                        <div class="icon-preview"><i class="fa fa-heart fa-4" style="font-size: 15px"></i>
+                        </div>
+                         <h4>{{recipe.name}}</h4>
+                    </div>
+                    <div class="clearfix visible-xs-block"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+  $(document).ready(function(){
+        $.material.init();
+    });
+    </script>

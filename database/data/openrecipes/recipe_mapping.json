@@ -1,0 +1,87 @@
+{
+    "recipe" : {
+        "_index" : {
+            "enabled" : true
+        },
+        "_id" : {
+            "index" : "not_analyzed",
+            "store" : "yes"
+        },
+        "properties" : {
+            "calories" : {
+                "type" : "string",
+                "index" : "not_analyzed",
+                "store" : "yes"
+            },
+            "carbohydrateContent" : {
+                "type" : "short",
+                "store" : "yes"
+            },
+            "cholesterolContent" : {
+                "type" : "short",
+                "store" : "yes",
+                "ignore_malformed" : "true"
+            },
+            "fatContent" : {
+                "type" : "short",
+                "store" : "yes",
+                "ignore_malformed" : "true"
+            },
+            "fiberContent" : {
+                "type" : "string",
+                "index" : "not_analyzed"
+            },
+            "image" : {
+                "type" : "string",
+                "index" : "not_analyzed"
+            },
+            "ingredients" : {
+                "type" : "short",
+                "store" : "yes",
+                "ignore_malformed" : "true"
+            },
+            "instructions" : {
+                "type" : "short",
+                "store" : "yes",
+                "ignore_malformed" : "true"
+            },
+            "keywords" : {
+                "type" : "short",
+                "store" : "yes",
+                "ignore_malformed" : "true"
+            },
+            "name" : {
+                "type" : "short",
+                "store" : "yes"
+            },
+            "proteinContent" : {
+                "type" : "short",
+                "store" : "yes"
+            },
+            "saturatedFatContent" : {
+                "type" : "string",
+                "store" : "yes"
+            },
+            "servings" : {
+                "type" : "short",
+                "store" : "yes"
+            },
+            "sodiumContent" : {
+                "type" : "short",
+                "store" : "yes"
+            },
+            "sugarContent" : {
+                "type" : "short",
+                "store" : "yes"
+            },
+            "url" : {
+                "type" : "short",
+                "store" : "yes"
+            },
+            "gluten" : {
+                "type" : "short",
+                "store" : "yes"
+            }
+        }
+    }
+}
