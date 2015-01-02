@@ -1,5 +1,5 @@
 > Learn more about this project by visiting: http://slides.com/marswilliams/canary
-
+> Learn more about the developer by visiting: linkedin.com/in/marswilliams/
 Canary
 ================
 Bringing tasty back!
