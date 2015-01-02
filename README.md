@@ -1,5 +1,5 @@
 > Learn more about this project by visiting the <a href="http://slides.com/marswilliams/canary">Canary Slide Deck</a>.<br>
-> Learn more about the developer by visiting her <a href="https://www.linkedin.com/in/marswilliams">Linkedin</a>.
+> Learn more about the developer by visiting her <a href="https://www.linkedin.com/in/marswilliams">LinkedIn</a>.
 
 Canary
 ================
